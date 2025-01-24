@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <!--Lidhja me Font Awesome per ikona-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--Lidhja me Swiper Css per slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!--Lidhja me style.css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header-i / Navbar-i-->
+    <header>
+        <nav class="axh-navbar section-content">
+            <a href="#" class="axh-nav-logo">
+                <h2 class="axh-logo-text">☕ Coffee Shop </h2>
+            </a>
+            <ul class="axh-nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="axh-nav-item">
+                    <a href="#" class="axh-nav-link">Home</a>
+                </li>
+                <li class="axh-nav-item">
+                    <a href="#about" class="axh-nav-link">About</a>
+                </li>
+                <li class="axh-nav-item">
+                    <a href="#menu" class="axh-nav-link">Menu</a>
+                </li>
+                <li class="axh-nav-item">
+                    <a href="#testimonials" class="axh-nav-link">Testimonials</a>
+                </li>
+                <li class="axh-nav-item">
+                    <a href="#gallery" class="axh-nav-link">Gallery</a>
+                </li>
+                <li class="axh-nav-item">
+                    <a href="#contact" class="axh-nav-link">Contact</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+    <main>
+        <!--Seksioni Hero-->
+        <section class="axh-hero-section">
+            <div class="section-content">
+                <div class="axh-hero-details">
+                    <h2 class="axh-title">Best Coffee</h2>
+                    <h3 class="axh-subtitle">Make your day great with our special coffee!</h3>
+                    <p class="axh-description">Welcome to our coffe pardise, where every bean tells a story and every cup sparks joy.</p>
+                    <div class="axh-buttons">
+                        <a href="#" class="axh-button order-now">Order Now</a>
+                        <a href="#" class="axh-button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="axh-hero-image-wrapper">
+                    <img src="images/coffee-hero-section.png" alt="Hero" class="axh-hero-image">
+                </div>
+            </div>
+        </section>
+        <!--Seksioni About-->
+        <section class="axh-about-section" id="about">
+            <div class="section-content">
+                <div class="axh-about-image-wrapper">
+                    <img src="images/about-image.jpg" alt="About" class="axh-about-image">
+                </div>
+                <div class="axh-about-details">
+                    <h2 class="axh-section-title">About Us</h2>
+                    <p class="axh-text">A Coffee House in Mitrovica , Kosovo , we pride ourselves on being a go-to 
+                        destination for coffee lovers and conversation seekers alike. We're dedicated to providing an
+                        inviting atmosphere , where guests can relax , unwind , and enjoy their time in comfort.
+                    </p>
+                    <div class="axh-social-link-list">
+                        <a href="#" class="axh-social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="axh-social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="axh-social-link">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seksioni Menu-->
+        <section class="axh-menu-section" id="menu">
+            <h2 class="axh-section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="axh-menu-list">
+                    <li class="axh-menu-item">
+                        <img src="images/hot-beverages.png" alt="Hot Beverages" class="axh-menu-image" />
+                        <div class="axh-menu-details">
+                        <h3 class="axh-name">Hot Beverages</h3>
+                        <p class="axh-text">Wide range of Steaming hot coffee to make you fresh and light.</p>
+                        </div>
+                    </li>
+                    <li class="axh-menu-item">
+                        <img src="images/cold-beverages.png" alt="Cold Beverages" class="axh-menu-image" />
+                        <div class="axh-menu-details">
+                        <h3 class="axh-name">Cold Beverages</h3>
+                        <p class="axh-text">Creamy and frothy cold coffee to make you cool.</p>
+                        </div>
+                    </li>
+                    <li class="axh-menu-item">
+                        <img src="images/refreshment.png" alt="Refreshment" class="axh-menu-image" />
+                        <div class="axh-menu-details">
+                        <h3 class="axh-name">Refreshment</h3>
+                        <p class="axh-text">Fruity and icy refreshing drink to make you feel refresh.</p>
+                        </div>
+                    </li>
+                    <li class="axh-menu-item">
+                        <img src="images/special-combo.png" alt="Special Combos" class="axh-menu-image" />
+                        <div class="axh-menu-details">
+                        <h3 class="axh-name">Special Combos</h3>
+                        <p class="axh-text">Your favorite eating and drinking combinations.</p>
+                        </div>
+                    </li>
+                    <li class="axh-menu-item">
+                        <img src="images/desserts.png" alt="Dessert" class="axh-menu-image" />
+                        <div clas="axh-menu-details">
+                        <h3 class="axh-name">Dessert</h3>
+                        <p class="axh-text">Satiate your plate and take you on a cilinary treat.</p>
+                        </div>
+                    </li>
+                    <li class="axh-menu-item">
+                        <img src="images/burger-frenchfries.png" alt="Burger & French Fries" class="axh-menu-image" />
+                        <div class="axh-menu-details">
+                        <h3 class="axh-name">Buger & French Fries</h3>
+                        <p class="axh-text">Quick bites to satisfy your small size hunger.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Seksioni Testimonials-->
+        <section class="axh-testimonials-section" id="testimonials">
+            <h2 class="axh-section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="axh-slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="axh-testimonials-list swiper-wrapper ">
+                            <li class="axh-testimonials swiper-slide">
+                                <img src="images/user-1.jpg" alt="User" class="axh-user-image">
+                                <h3 class="axh-name">Sarah Johnson</h3>
+                                <i class="axh-feedback">" Loved the Cold Beverage . Perfectly balanced and rich . Will order again ! "</i>
+                            </li>
+                            <li class="axh-testimonials swiper-slide">
+                                <img src="images/user-2.jpg" alt="User" class="axh-user-image">
+                                <h3 class="axh-name">James Wilson</h3>
+                                <i class="axh-feedback">" Great Hot Beverage ! Smooth and bold flavor . Fast shipping too ! "</i>
+                            </li>
+                            <li class="axh-testimonials swiper-slide">
+                                <img src="images/user-3.jpg" alt="User" class="axh-user-image">
+                                <h3 class="axh-name">Michael Brown</h3>
+                                <i class="axh-feedback">" Fantastic strawberry flavor , fresh and aromatic . Quick shipping ! "</i>
+                            </li>
+                            <li class="axh-testimonials swiper-slide">
+                                <img src="images/user-4.jpg" alt="User" class="axh-user-image">
+                                <h3 class="axh-name">Emily Harris</h3>
+                                <i class="axh-feedback">" Excellent quality ! Fresh burgers and quick delivery . Highly recommend ! "</i>
+                            </li>
+                            <li class="axh-testimonials swiper-slide ">
+                                <img src="images/user-5.jpg" alt="User" class="axh-user-image">
+                                <h3 class="axh-name">Anthony Thompson</h3>
+                                <i class="axh-feedback">" The Best dessert ever that I've tried ! Smooth and flavorful . Arrived promptly ! "</i>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seksioni Gallery-->
+        <section class="axh-gallery-section" id="gallery">
+            <h2 class="axh-section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="axh-gallery-list">
+                    <li class="axh-gallery-item">
+                        <img src="images/gallery-1.jpg" alt="Gallery" class="axh-gallery-image">
+                    </li>
+                    <li class="axh-gallery-item">
+                        <img src="images/gallery-2.jpg" alt="Gallery" class="axh-gallery-image">
+                    </li>
+                    <li class="axh-gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Gallery" class="axh-gallery-image">
+                    </li>
+                    <li class="axh-gallery-item">
+                        <img src="images/gallery-4.jpg" alt="Gallery" class="axh-gallery-image">
+                    </li>
+                    <li class="axh-gallery-item">
+                        <img src="images/gallery-5.jpg" alt="Gallery" class="axh-gallery-image">
+                    </li>
+                    <li class="axh-gallery-item">
+                        <img src="images/gallery-6.jpg" alt="Gallery" class="axh-gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Seksioni Contact Us-->
+        <section class="axh-contact-section" id="contact">
+            <h2 class="axh-section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="axh-contact-info-list">
+                    <li class="axh-contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Hoxhe Hasan Tahsini , Mitrovice , Kosove</p>
+                    </li>
+                    <li class="axh-contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>arianitxhafa95@gmail.com</p>
+                    </li>
+                    <li class="axh-contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>048-169-820</p>
+                    </li>
+                    <li class="axh-contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - Friday : 9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="axh-contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Saturday : 10:00 AM - 3:00 PM</p>
+                    </li>
+                    <li class="axh-contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Sunday : Closed</p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <textarea placeholder="Your message"  class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!--Seskioni Footer-->
+        <footer class="axh-footer-section">
+            <div class="section-content">
+                <p class="axh-copyright-text">© 2024 Coffee Shop</p>
+                
+                    <div class="axh-social-link-list">
+                        <a href="#" class="axh-social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="axh-social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="axh-social-link">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                    <p class="axh-policy-text">
+                        <a href="#" class="axh-policy-link">Privacy policy</a>
+                        <span class="axh-separator">•</span>
+                        <a href="#" class="axh-policy-link">Refund policy</a>
+                    </p>
+                </div>
+        </footer>
+    </main>
+    <!--Lidhja me Swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Lidhja me script.js-->
+    <script src="script.js"></script>
+</body>
+</html>

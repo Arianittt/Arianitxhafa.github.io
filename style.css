@@ -1,0 +1,630 @@
+/* Importimi i fonteve nga Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+     /*Ngjyrat primare*/
+     --white-color: #fff;
+     --dark-color: #252525;
+     --primary-color: #3b141c;
+     --secondary-color: #f3961c;
+     --light-pink-color: #faf4f5;
+     --medium-gray-color: #ccc;
+
+      /*Madhesia e Fontit*/
+     --font-size-s: 0.9rem;
+     --font-size-n: 1rem;
+     --font-size-m: 1.12rem;
+     --font-size-l: 1.5rem;
+     --font-size-xl: 2rem;
+     --font-size-xxl: 2.3rem;
+
+     /*Pesha e Fontit*/
+     --font-weight-normal: 400;
+     --font-weight-medium: 500;
+     --font-weight-semibold: 600;
+     --font-weight-bold: 700;
+
+     /*Rrezja e Borderit*/
+     --border-radius-s: 8px;
+     --border-radius-m: 30px;
+     --border-radius-circle: 50%;
+
+       /*Gjeresia maksimale e Sajtit*/
+     --site-max-width: 1300px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Stilimi per te gjitha elementet e Sajtit */
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+.section-content{
+    margin:  0 auto;
+    padding: 0  20px;
+    max-width: var(--site-max-width);
+}
+
+.axh-section-title{
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+
+.axh-section-title::after{
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+/* Stilimi i Navbarit */
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--primary-color);
+}
+
+header .axh-navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.axh-navbar .axh-nav-logo .axh-logo-text{
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.axh-navbar .axh-nav-menu{
+    display: flex;
+    gap: 10px
+}
+
+.axh-navbar .axh-nav-menu .axh-nav-link{
+    padding: 10px 18px;
+    color:var(--white-color);
+    font-size: var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.axh-navbar .axh-nav-menu .axh-nav-link:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+.axh-navbar :where(#menu-close-button, #menu-open-button){
+    display: none;
+}
+
+/* Stilimi i Seksionit Hero */
+.axh-hero-section{
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+
+.axh-hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+.axh-hero-section .axh-hero-details .axh-title{
+    font-size: var(--font-size-xl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.axh-hero-section .axh-hero-details .axh-subtitle{
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.axh-hero-section .axh-hero-details .axh-description{
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+}
+
+.axh-hero-section .axh-hero-details .axh-buttons{
+    display: flex;
+    gap: 23px;
+}
+
+.axh-hero-section .axh-hero-details .axh-button{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3s ease;
+}
+
+.axh-hero-section .axh-hero-details .axh-button:hover,
+.axh-hero-section .axh-hero-details .contact-us{
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+.axh-hero-section .axh-hero-details .contact-us:hover{
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+   
+.axh-hero-section .axh-hero-image-wrapper{
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+/* Stilimi i seksionit About */
+.axh-about-section{
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+.axh-about-section .section-content{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.axh-about-section .axh-about-image-wrapper .axh-about-image{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
+.axh-about-section .axh-about-details .axh-section-title{
+    padding: 0;
+}
+
+.axh-about-section .axh-about-details{
+    max-width: 50%;
+}
+
+.axh-about-section .axh-about-details .axh-text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.axh-about-section .axh-social-link-list{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.axh-about-section .axh-social-link-list .axh-social-link{
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    transition: 0.2s ease;
+}
+
+.axh-about-section .axh-social-link-list .axh-social-link:hover{
+    color: var(--secondary-color);
+
+}
+
+/* Stilimi i seksionit Menu */
+.axh-menu-section{
+    color: var(--white-color);
+    background: var(--dark-color);
+    padding: 50px 0 100px;
+}
+
+.axh-menu-section .axh-menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.axh-menu-section .axh-menu-list .axh-menu-item{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+
+.axh-menu-section .axh-menu-list .axh-menu-item .axh-menu-image{
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.axh-menu-section .axh-menu-list .axh-menu-item .axh-name{
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+.axh-menu-section .axh-menu-list .axh-menu-item .axh-text{
+    font-size: var(--font-size-m);
+}
+
+/*Stlimi i seksionit Testimonials */
+.axh-testimonials-section{
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+}
+
+.axh-testimonials-section .slider-wrapper{
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
+.axh-testimonials-section .axh-testimonials{
+    user-select: none;
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.axh-testimonials-section .axh-testimonials .axh-user-image{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: var(--border-radius-circle);
+}
+
+.axh-testimonials-section .axh-testimonials .axh-name{
+    margin-bottom: 16px;
+    font-size: var(--font-size-m);
+}
+
+.axh-testimonials-section .axh-testimonials .axh-feedback{
+    line-height: 25px;
+}
+
+.axh-testimonials-section  .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: var(--secondary-color);
+}
+
+.axh-testimonials-section .swiper-slide-button{
+    margin-top: -50px;
+    color: var(--secondary-color);
+    transition: 0.3 ease;
+}
+
+.axh-testimonials-section .swiper-slide-button:hover{
+    color: var(--primary-color);
+}
+
+/* Stilimi i seksionit Gallery */
+.axh-gallery-section{
+    padding: 50px 0 100px;
+}
+
+.axh-gallery-section .axh-gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.axh-gallery-section .axh-gallery-list .axh-gallery-item{
+    overflow: hidden;
+    border-radius: var(--border-radius-s);
+    width: calc(100% / 3 - 32px);
+}
+
+.axh-gallery-section  .axh-gallery-item .axh-gallery-image{
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    transition: 0.3s ease;
+}
+
+.axh-gallery-section .axh-gallery-item:hover .axh-gallery-image{
+    transform: scale(1.3);
+}
+
+/* Stilimi i seksionit Contact Us */
+.axh-contact-section{
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+}
+
+.axh-contact-section .section-content{
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.axh-contact-section .axh-contact-info-list .axh-contact-info{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0 ;
+    align-items: center;
+}
+
+.axh-contact-section .axh-contact-info-list .axh-contact-info i {
+    font-size: var(--border-radius-m);
+}
+
+.axh-contact-section .contact-form .form-input{
+    width: 100%;
+    height: 50px;
+    padding: 0 12px ;
+    outline: none;
+    margin-bottom: 16px;
+    background: var(--white-color);
+    border-radius: var(--border-radius-s);
+    border: 1px solid var(--medium-gray-color);
+}
+
+.axh-contact-section .contact-form{
+    max-width: 50%;
+}
+
+.axh-contact-section .contact-form .form-input:focus{
+    border-color: var(--secondary-color);
+}
+
+.axh-contact-section .contact-form textarea.form-input{
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+
+.axh-contact-section .contact-form .submit-button{
+    padding: 10px 26px;
+    margin-top: 10px;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-medium);
+    background: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    border: 1px solid var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.axh-contact-section .contact-form .submit-button:hover{
+    color: var(--primary-color);
+    background: transparent;
+}
+
+/*Stilimi i Footer-it */
+.axh-footer-section{
+    padding: 20px;
+    background: var(--dark-color);
+}
+
+.axh-footer-section .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.axh-footer-section :where(.axh-copyright-text, .axh-social-link, .axh-policy-link){
+    color: var(--white-color);
+    transition: 0.2s ease;
+}
+
+.axh-footer-section .axh-social-link-list{
+    display: flex;
+    gap: 25px;
+}
+
+.axh-footer-section .axh-social-link-list .axh-social-link{
+    font-size: var(--font-size-l);
+}
+
+.axh-footer-section .axh-social-link-list .axh-social-link:hover,
+.axh-footer-section .axh-policy-text .axh-policy-link:hover{
+    color: var(--secondary-color);
+}
+
+.axh-footer-section .axh-policy-text .axh-separator{
+    margin: 0 5px;
+    color: var(--white-color);
+}
+
+
+/* Kodi i pergjegjesise se media query për gjerësinë maksimale 1024 piksell */
+@media screen and (max-width: 1024px){
+    .axh-menu .axh-menu-list{
+        gap: 60px;
+    }
+
+    .axh-menu-section .axh-menu-list .axh-menu-item{
+        width: calc(100% / 3 - 60px);
+    }
+}
+
+/* Kodi i pergjegjesise se media query për gjerësinë maksimale 900 piksell */
+@media screen and (max-width: 900px) {
+    :root{
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;
+    }
+
+    body.show-mobile-menu header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .axh-navbar :where(#menu-close-button, #menu-open-button){
+        display: block;
+        font-size: var(--font-size-l);
+    }
+
+    .axh-navbar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .axh-navbar #menu-open-button{
+        color: var(--white-color);
+    }
+
+   .axh-navbar .axh-nav-menu{
+    display: block;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background: var(--white-color);
+    transition: left 0.2s ease;
+   }
+
+   body.show-mobile-menu .axh-navbar .axh-nav-menu{
+    left: 0;
+   }
+
+   .axh-navbar .axh-nav-menu .axh-nav-link{
+    color: var(--dark-color);
+    display: block;
+    margin-top: 17px;
+    font-size: var(--font-size-l);
+   }
+
+   .axh-hero-section .section-content{
+    gap: 50px;
+    text-align: center;
+    padding: 30px 20px 20px;
+    flex-direction: column-reverse;
+    justify-content: center;
+   }
+
+    .axh-hero-section .axh-hero-details  :is(.axh-subtitle , 
+    .axh-description), .axh-about-section .axh-about-details, .axh-contact-section .contact-form{
+    max-width: 100%;
+    }
+
+    .axh-hero-section .axh-hero-details .axh-buttons{
+        justify-content: center;
+    }
+
+   .axh-hero-section .axh-hero-image-wrapper{
+    max-width: 270px;
+    margin-right: 0;
+   }
+
+   .axh-about-section .section-content{
+    gap: 70px;
+    flex-direction: column-reverse;
+   }
+
+   .axh-about-section .axh-about-image-wrapper .axh-about-image{
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    aspect-ratio: 1;
+   }
+
+   .axh-menu-section .axh-menu-list{
+    gap: 30px;
+   }
+
+   .axh-menu-section .axh-menu-list .axh-menu-item{
+    width: calc(100% / 2 - 30px);
+   }
+
+   .axh-menu-section .axh-menu-list .axh-menu-item .axh-menu-image{
+    max-width: 200px;
+   }
+
+   .axh-gallery-section .axh-gallery-list{
+    gap: 30px;
+   }
+
+   .axh-gallery-section .axh-gallery-list .axh-gallery-item{
+    width: calc(100% / 2 - 30px);
+   }
+
+   .axh-contact-section .section-content{
+    align-items: center;
+    flex-direction: column-reverse;
+   }
+}
+/* Kodi i pergjegjesise se media query për gjerësinë maksimale 640 piksell */
+@media screen and (max-width: 640px){
+    .axh-menu-section .axh-menu-list{
+        gap: 60px;
+    }
+    .axh-menu-section .axh-menu-list .axh-menu-item, 
+    .axh-gallery-section .axh-gallery-list .axh-gallery-item {
+        width: 100%;
+    }
+
+    .axh-testimonials-section .slider-wrapper{
+        margin: 0 0 30px;
+    }
+
+    .axh-testimonials-section .swiper-slide-button{
+        display: none;
+    }
+
+    .axh-footer-section .section-content{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+  
